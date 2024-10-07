@@ -6,7 +6,7 @@ sudo -i
 apt update
 ```
 
-###STEP 1 : CREATE CLUSTER ON ECS
+### STEP 1 : CREATE CLUSTER ON ECS
 
         
    -> give cluster name and select ec2 instance
@@ -22,7 +22,7 @@ apt update
 
    ->   then create cluster.
 
-###STEP 2 : CREATE A NEW TASK DEFINITION 
+### STEP 2 : CREATE A NEW TASK DEFINITION 
 
 
    ->  give appropriate task definition  family
@@ -45,7 +45,7 @@ apt update
 
    ->     then create. 
 
-###STEP 3 : CREATE SERVICE IN CREATED CLUSTER  
+### STEP 3 : CREATE SERVICE IN CREATED CLUSTER  
 
 
    ->   select launch type as ec2
@@ -54,12 +54,13 @@ apt update
 
    ->   create service.
 
-###STEP 4 : GO TO EC2 DASHBOARD AND COPY  INSTANCE PUB. IP
+### STEP 4 : GO TO EC2 DASHBOARD AND COPY  INSTANCE PUB. IP
 
 
    ->   open http port 80 for nginx
    ->   copy ec2 ip and get the default home page of nginx.
 
+-> deploy todo
 
 ![alt text](<Screenshot (291).png>)
    
