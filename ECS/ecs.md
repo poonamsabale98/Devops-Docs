@@ -35,13 +35,13 @@ apt update
 
    ->  container name = give appropriate name
 
-   ->  image URI = nginx:latest
-                   poonam1006/todo:micro
+   ->  image URI = nginx:latest,
+                   poonam1006/todo:micro,
                    poonam1006/student:micro 
                                   ________dockerhub image name
 
    ->   host port = 80 & container port = 80
-                 ___both port 80 for nginx & todo ,8080 for student  
+                 _____both port 80 for nginx & todo ,8080 for student  
 
    ->     then create. 
 
