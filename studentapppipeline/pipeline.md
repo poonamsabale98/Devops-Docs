@@ -1,10 +1,8 @@
-<<<<<<< HEAD
-###DEPLOYED STUDENTAPP USING JENKINS PIPELINE
-=======
+<<
 ## DEPLOYED STUDENTAPP USING JENKINS PIPELINE
->>>>>>> 18487167cf56ba6c5be1397602ae3610c4bef217
 
-<<<<<<< HEAD
+
+
 
 STEP 1 : CREATE 2 INSTANCE ON UBUNTU
 
@@ -24,7 +22,7 @@ STEP 2 : CONNECT INSTANCES ONE BY ONE
     sudo apt-get update
     sudo apt-get install jenkins
     '''
-=======
+
 
 #### STEP 1 : CREATE 2 INSTANCE ON UBUNTU
 
