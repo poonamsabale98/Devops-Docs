@@ -21,14 +21,16 @@ STEP 2 : CONNECT INSTANCES ONE BY ONE
   sudo apt-get install jenkins
   ```
 
-     installation of java dependancy :
+ installation of java dependancy :
 
   ```
   sudo apt update
   sudo apt install fontconfig openjdk-17-jre
   java -version
   ```
-  ``` sudo systemctl enable jenkins ```
+  ```
+   sudo systemctl enable jenkins 
+   ```
 
   ```
   sudo systemctl start jenkins
@@ -37,3 +39,5 @@ STEP 2 : CONNECT INSTANCES ONE BY ONE
 ```
   sudo systemctl status jenkins
 ```
+
+then, hit the IP   <public IP>:8080
