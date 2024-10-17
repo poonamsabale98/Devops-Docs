@@ -112,7 +112,7 @@ click on apply and save.
 
 click on build now
 
-![alt text](<Screenshot (356)-1.png>)
+![alt text](<Screenshot (355)-1.png>)
 
 then, hit  the  1st INST. ip:8080 -> then show tomcat page
 
