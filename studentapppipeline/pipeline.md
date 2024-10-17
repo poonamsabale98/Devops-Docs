@@ -1,4 +1,4 @@
-###DEPLOYED STUDENTAPP USING JENKINS PIPELINE
+### DEPLOYED STUDENTAPP USING JENKINS PIPELINE
 
 
 STEP 1 : CREATE 2 INSTANCE ON UBUNTU
@@ -20,3 +20,20 @@ STEP 2 : CONNECT INSTANCES ONE BY ONE
   sudo apt-get update
   sudo apt-get install jenkins
   ```
+
+     installation of java dependancy :
+
+  ```
+  sudo apt update
+  sudo apt install fontconfig openjdk-17-jre
+  java -version
+  ```
+  ``` sudo systemctl enable jenkins ```
+
+  ```
+  sudo systemctl start jenkins
+  ```
+
+```
+  sudo systemctl status jenkins
+```
