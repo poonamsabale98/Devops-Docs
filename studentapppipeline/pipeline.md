@@ -87,6 +87,8 @@ Host -> 2nd inst. public IP
 
 Credentials -> add - kind-> SSH username with private key 
 
+![alt text](<Screenshot (352).png>)
+
 ID -> 1 
 
 username -> ubuntu
@@ -111,5 +113,9 @@ click on build now
 then, hit  the  1st INST. ip:8080 -> then show tomcat page
 
 1st INST. ip:8080/student -> then show the studentapp page.
+
+![alt text](<Screenshot (353)-2.png>)
+
+![alt text](<Screenshot (354).png>)
 
 DONE.
