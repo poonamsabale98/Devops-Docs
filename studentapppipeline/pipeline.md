@@ -48,13 +48,15 @@ copy the below path & on terminal sudo cat /var/lib/jenkins/secrets/initialAdmin
 /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
-then, the output keep in the jenkins password ,,
+then, the output keep in the jenkins password 
 
-click on the installed suggested plugins ,,
+![alt text](<Screenshot (351).png>)
 
-click on skip and continued as admin ,,
+click on the installed suggested plugins 
 
-click on save and start ,,
+click on skip and continued as admin 
+
+click on save and start 
 
 then click on start the jenkins.
 
