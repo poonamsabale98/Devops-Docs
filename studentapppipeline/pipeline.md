@@ -40,4 +40,4 @@ STEP 2 : CONNECT INSTANCES ONE BY ONE
   sudo systemctl status jenkins
 ```
 
-then, hit the IP   <publicIP>:8080
+then, hit the IP   publicIP:8080
