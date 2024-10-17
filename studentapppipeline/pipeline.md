@@ -71,5 +71,10 @@ In credential select your username
 Host key verification strategy -> Non verifying verification strategy
 then save.
 
+2nd INST. coonnect, install java 11 and maven
+
+```
+sudo apt install openjdk-11-jre-headless -y
+```
 
 
