@@ -41,3 +41,15 @@ STEP 2 : CONNECT INSTANCES ONE BY ONE
 ```
 
 then, hit the IP   publicIP:8080
+
+copy the below path & on terminal sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+```
+/var/lib/jenkins/secrets/initialAdminPassword
+```
+
+then, the output keep in the jenkins password
+
+click on the installed suggested plugins
+
+
