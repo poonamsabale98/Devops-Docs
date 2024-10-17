@@ -29,7 +29,7 @@ STEP 2 : CONNECT INSTANCES ONE BY ONE
   java -version
   ```
   ```
-   sudo systemctl enable jenkins 
+  sudo systemctl enable jenkins 
    ```
 
   ```
@@ -51,8 +51,11 @@ copy the below path & on terminal sudo cat /var/lib/jenkins/secrets/initialAdmin
 then, the output keep in the jenkins password
 
 click on the installed suggested plugins
+
 click on skip and continued as admin
+
 click on save and start
+
 then click on start the jenkins.
 
 2nd INST. coonnect, install java 11 and maven
@@ -73,14 +76,21 @@ sudo apt install maven
 click on Managed jenkins -> Nodes -> new node -> give the node name (EX. studentapp), click on permanent agent then create.
 
 Remote Root Directory -> /home/ubuntu
+
 Labels -> any name (EX.dummy).......script label same
+
 Launch Method -> launch agent via SSH
+
 Host -> 2nd inst. public IP
+
 Credentials -> add - kind-> SSH username with private key
+
                      ID -> 1
+
                      username -> ubuntu
-                     private key-> click enter directly then click on add 
-                                  paste the 2nd inst. private key. then ADD
+
+                     private key-> click enter directly then click on add then,paste the 
+                                   2nd inst.private key. then ADD
 In credential select your username
 
 Host key verification strategy -> Non verifying verification strategy
