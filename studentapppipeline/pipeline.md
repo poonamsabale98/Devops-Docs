@@ -55,10 +55,25 @@ click on skip and continued as admin
 click on save and start
 then click on start the jenkins.
 
+2nd INST. coonnect, install java 11 and maven
+
+```
+sudo apt update
+```
+
+
+```
+sudo apt install openjdk-11-jre-headless -y
+```
+```
+sudo apt install maven
+```
+
+
 click on Managed jenkins -> Nodes -> new node -> give the node name (EX. studentapp), click on permanent agent then create.
 
 Remote Root Directory -> /home/ubuntu
-Labels -> any name (EX.dummy)
+Labels -> any name (EX.dummy).......script label same
 Launch Method -> launch agent via SSH
 Host -> 2nd inst. public IP
 Credentials -> add - kind-> SSH username with private key
@@ -71,12 +86,10 @@ In credential select your username
 Host key verification strategy -> Non verifying verification strategy
 then save.
 
-2nd INST. coonnect, install java 11 and maven
 
-```
-sudo apt install openjdk-11-jre-headless -y
-```
-```
-sudo apt install maven
-```
+
+new items -> name (EX. pipeline) - select pipeline option ,then ok
+In general -> pipeline (definition) -> Pipeline script
+then, script paste
+click on apply and save.
 
