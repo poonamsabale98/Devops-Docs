@@ -93,3 +93,8 @@ In general -> pipeline (definition) -> Pipeline script
 then, script paste
 click on apply and save.
 
+click on build now
+then, hit  the  1st INST. ip:8080 -> then show tomcat page
+                1st INST. ip:8080/student -> then show the studentapp page.
+
+DONE.
