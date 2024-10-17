@@ -60,5 +60,16 @@ click on Managed jenkins -> Nodes -> new node -> give the node name (EX. student
 Remote Root Directory -> /home/ubuntu
 Labels -> any name (EX.dummy)
 Launch Method -> launch agent via SSH
-Host -> 2nd inst. p
+Host -> 2nd inst. public IP
+Credentials -> add - kind-> SSH username with private key
+                     ID -> 1
+                     username -> ubuntu
+                     private key-> click enter directly then click on add 
+                                  paste the 2nd inst. private key. then ADD
+In credential select your username
+
+Host key verification strategy -> Non verifying verification strategy
+then save.
+
+
 
