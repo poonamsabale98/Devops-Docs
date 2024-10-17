@@ -108,14 +108,18 @@ then, script paste
 
 click on apply and save.
 
+![alt text](<Screenshot (356)-2.png>)
+
 click on build now
+
+![alt text](<Screenshot (356)-1.png>)
 
 then, hit  the  1st INST. ip:8080 -> then show tomcat page
 
 1st INST. ip:8080/student -> then show the studentapp page.
 
-![alt text](<Screenshot (353)-2.png>)
+![alt text](<Screenshot (353)-3.png>)
 
-![alt text](<Screenshot (354).png>)
+![alt text](<Screenshot (354)-1.png>)
 
 DONE.
