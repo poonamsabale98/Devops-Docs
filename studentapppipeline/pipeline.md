@@ -1,13 +1,13 @@
-### DEPLOYED STUDENTAPP USING JENKINS PIPELINE
+## DEPLOYED STUDENTAPP USING JENKINS PIPELINE
 
 
-STEP 1 : CREATE 2 INSTANCE ON UBUNTU
+#### STEP 1 : CREATE 2 INSTANCE ON UBUNTU
 
 1ST INST. jenkins ,security gr. 8080
 
 2nd INST. webserver ......t2 medium & same keypair
 
-STEP 2 : CONNECT INSTANCES ONE BY ONE
+#### STEP 2 : CONNECT INSTANCES ONE BY ONE
 
 1ST connect,then install jenkin
     
@@ -40,7 +40,7 @@ STEP 2 : CONNECT INSTANCES ONE BY ONE
   sudo systemctl status jenkins
 ```
 
-then, hit the IP   publicIP:8080
+#### Step 3: hit the IP   publicIP:8080
 
 copy the below path & on terminal sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
@@ -48,7 +48,7 @@ copy the below path & on terminal sudo cat /var/lib/jenkins/secrets/initialAdmin
 /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
-then, the output keep in the jenkins password 
+#### Step 4:  the output keep in the jenkins password 
 
 ![alt text](<Screenshot (351).png>)
 
@@ -58,7 +58,7 @@ click on skip and continued as admin
 
 click on save and start 
 
-then click on start the jenkins.
+#### Step 5:  click on start the jenkins.
 
 2nd INST. coonnect, install java 11 and maven
 
@@ -87,13 +87,11 @@ Host -> 2nd inst. public IP
 
 Credentials -> add - kind-> SSH username with private key 
 
-                     ID -> 1 ,,
+ID -> 1 
 
-                     username -> ubuntu
+username -> ubuntu
 
-                     private key-> click enter directly then click on add then,paste the 
-                                   2nd inst.private key. then ADD
-In credential select your username
+private key-> click enter directly then click on add then,paste the 2nd inst.private key. then ADD in credential select your username
 
 Host key verification strategy -> Non verifying verification strategy
 then save.
@@ -101,12 +99,17 @@ then save.
 
 
 new items -> name (EX. pipeline) - select pipeline option ,then ok
+
 In general -> pipeline (definition) -> Pipeline script
+
 then, script paste
+
 click on apply and save.
 
 click on build now
+
 then, hit  the  1st INST. ip:8080 -> then show tomcat page
-                1st INST. ip:8080/student -> then show the studentapp page.
+
+1st INST. ip:8080/student -> then show the studentapp page.
 
 DONE.
