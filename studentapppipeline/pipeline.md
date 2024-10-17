@@ -75,15 +75,15 @@ sudo apt install maven
 
 click on Managed jenkins -> Nodes -> new node -> give the node name (EX. studentapp), click on permanent agent then create.
 
-Remote Root Directory -> /home/ubuntu ,,
+Remote Root Directory -> /home/ubuntu 
 
-Labels -> any name (EX.dummy).......script label same ,,
+Labels -> any name (EX.dummy).......script label same 
 
-Launch Method -> launch agent via SSH ,,
+Launch Method -> launch agent via SSH
 
-Host -> 2nd inst. public IP ,,
+Host -> 2nd inst. public IP
 
-Credentials -> add - kind-> SSH username with private key ,,
+Credentials -> add - kind-> SSH username with private key 
 
                      ID -> 1 ,,
 
