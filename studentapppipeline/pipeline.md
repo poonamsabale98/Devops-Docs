@@ -1,5 +1,30 @@
+<<<<<<< HEAD
+###DEPLOYED STUDENTAPP USING JENKINS PIPELINE
+=======
 ## DEPLOYED STUDENTAPP USING JENKINS PIPELINE
+>>>>>>> 18487167cf56ba6c5be1397602ae3610c4bef217
 
+<<<<<<< HEAD
+
+STEP 1 : CREATE 2 INSTANCE ON UBUNTU
+
+    1ST INST. jenkins ,security gr. 8080
+    2nd INST. webserver ......t2 medium & same keypair
+
+STEP 2 : CONNECT INSTANCES ONE BY ONE
+
+    1ST connect,then install jenkin
+    
+    '''
+    sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+    https://pkg.jenkins.io/debian/jenkins.io-2023.key
+    echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
+    https://pkg.jenkins.io/debian binary/ | sudo tee \
+    /etc/apt/sources.list.d/jenkins.list > /dev/null
+    sudo apt-get update
+    sudo apt-get install jenkins
+    '''
+=======
 
 #### STEP 1 : CREATE 2 INSTANCE ON UBUNTU
 
@@ -106,6 +131,48 @@ In general -> pipeline (definition) -> Pipeline script
 
 then, script paste
 
+pipeline {
+      agent{
+        label 'dummy'    //mention the label of your webserver node provided in jenkins
+    }
+    stages {
+          stage('Pull') {
+            steps {
+                 echo "we are pulling from github"
+                 git "https://github.com/AnupDudhe/studentapp-ui"
+            }
+        }
+        stage('Build') {
+            steps {
+                sh '''
+                sudo mvn clean package 
+                sudo apt update 
+                sudo apt install unzip -y
+                sudo curl -O https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.95/bin/apache-tomcat-9.0.95.zip
+                sudo unzip apache-tomcat-9.0.95.zip 
+                echo we are building source code'''
+            }
+        }
+        stage('Test') {
+            steps {
+                sh '''echo "we are testing"
+                '''
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh '''
+                 sudo mv target/*.war  apache-tomcat-9.0.95/webapps/student.war
+                 sudo bash apache-tomcat-9.0.95/bin/catalina.sh start
+                 echo "we are deploying"
+                '''
+            }
+        }
+    }
+}
+
+95 exchange 96,bz version updated
+
 click on apply and save.
 
 ![alt text](<Screenshot (356)-2.png>)
@@ -123,3 +190,5 @@ then, hit  the  1st INST. ip:8080 -> then show tomcat page
 ![alt text](<Screenshot (354)-1.png>)
 
 DONE.
+
+>>>>>>> 18487167cf56ba6c5be1397602ae3610c4bef217
