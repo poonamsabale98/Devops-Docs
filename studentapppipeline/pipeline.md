@@ -81,7 +81,7 @@ click on Managed jenkins -> Nodes -> new node -> give the node name (EX. student
 
 Remote Root Directory -> /home/ubuntu 
 
-Labels -> any name (EX.dummy).......script label same 
+Labels -> any name (EX.dummy).......any name same as label name in pipeline of script
 
 Launch Method -> launch agent via SSH
 
